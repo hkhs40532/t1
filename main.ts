@@ -1,3 +1,4 @@
+let 骰子 = 0
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber > 骰子) {
         basic.showIcon(IconNames.Sad)
@@ -15,5 +16,3 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(骰子)
     radio.sendNumber(骰子)
 })
-let 骰子 = 0
-radio.setGroup(101)
